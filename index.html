@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <div class="mobile-overlay">
+      <div class="logo-container">
+        <svg class="logo__icon">
+          <image href="assets/desktop/logo.svg"></image>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="card">
+          <main class="main">
+            <h1 class="main__header">
+              Publish your podcasts
+              <span class="main__header-white">everywhere.</span>
+            </h1>
+
+            <p class="main__paragraph">
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
+
+            <div class="form-nav">
+              <form class="main__form" id="form">
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  class="main__form__input"
+                  name="email"
+                  id="email"
+                />
+                <button class="main__form__btn">Request access</button>
+              </form>
+              <span id="error"></span>
+              <nav class="main__nav">
+                <ul class="main__nav-list">
+                  <li class="main__nav-item">
+                    <a href="#">
+                      <svg class="main__nav-icon">
+                        <image
+                          class="main__nav-image"
+                          href="assets/desktop/spotify.svg"
+                        ></image>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="main__nav-item">
+                    <a href="#">
+                      <svg class="main__nav-icon">
+                        <image
+                          class="main__nav-image"
+                          href="assets/desktop/apple-podcast.svg"
+                        ></image>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="main__nav-item">
+                    <a href="#">
+                      <svg class="main__nav-icon">
+                        <image
+                          class="main__nav-image"
+                          href="assets/desktop/google-podcasts.svg"
+                        ></image>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="main__nav-item">
+                    <a href="#">
+                      <svg class="main__nav-icon">
+                        <image
+                          class="main__nav-image"
+                          href="assets/desktop/pocket-casts.svg"
+                        ></image>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </main>
+        </div>
+
+        <div class="image-container">
+          <img
+            alt="dots"
+            src="assets/desktop/bg-pattern-dots.svg"
+            class="image-container__dots"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
