@@ -10,10 +10,10 @@ form.addEventListener("submit", (e) => {
 function validateInput() {
   const emailVal = email.value.trim();
   if (emailVal === "") {
-    displayError("fail", "Email cannot be blank!");
+    displayError("fail", "Oops! Please add your email");
     return;
   } else if (!isValid(emailVal)) {
-    displayError("fail", "Invalid email! Try again");
+    displayError("fail", "Oops! Please check your email");
     return;
   } else {
     displayError("success", "Email received!");
